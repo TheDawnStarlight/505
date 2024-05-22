@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{int num = 1, resto;
+    while(num != 0){
+    scanf("%d", &num);
+    if (num%6 != 0)
+    {   resto = (num%6);
+        printf("%d nao divisivel por 6, resto %d\n", num, resto);
+
+    }
+    else printf("%d divisivel por 6\n", num);
+    if (num%7 != 0){
+            resto = (num%7);
+            printf("%d nao divisivel por 7, resto %d\n", num, resto);
+    }
+    else printf("%d divisivel por 7\n", num);
+    if (num%8 != 0){
+        resto = (num%8);
+            printf("%d nao divisivel por 8, resto %d\n", num, resto);
+    }
+    else printf("%d divisivel por 8\n", num);
+    if (num%9 != 0)
+    {resto = (num%9);
+        printf("%d nao divisivel por 9, resto %d\n", num, resto);
+
+    }
+    else printf("%d divisivel por 9\n", num);
+
+    if (num%11 != 0){
+    printf("%d nao divisivel por 11, resto %d\n", num, resto); ;
+    resto = (num%11);
+    } else printf("%d divisivel por 11\n", num);
+
+    }
+        return 0;
+}
